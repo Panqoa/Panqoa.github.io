@@ -2,42 +2,23 @@
 
 <head>
 <title>A BASIC FORM</title>
-<script type="text/javascript">
-function a()
-{
-var x = document.form1.name.value;
-var y = document.form1.pass.value;
-if (x=="" || x==null || y=="" || y==null)
-{
-alert("Fill username and password");
-return false;
-}
-else if (x=="naqi" && y=="123")
-{
-        document.write("GOOD"):
-	
-}
-else
-{
-	alert("Invalid user");
-	return false;
-}
-}
-</script>
+<script type="text/javascript" src="script.js">  </script>
 </head>
 
 <body>
-<h1></h1>
+
+<h1>
 A BASIC FORM
+</h1>
 <table>
-<form name="form1" onsubmit="return a()" >
+
 
 <tr>
 <td>
 Name : 
 </td>
 <td>
-<input name="name">
+<input id="name">
 </td>
 </tr>
 <tr>
@@ -45,16 +26,16 @@ Name :
 Password : 
 </td>
 <td>
-<input type = "password" name="pass">
+<input type = "password" id="pass">
 </td>
 </tr>
 <tr>
 <td>
-<input type="submit">
+<input type="button" onclick="a()">
 </td>
 <tr>
-</form>
+
 </table>
-</font>
+<p id="p1"> </p>
 </body>
 </html>
